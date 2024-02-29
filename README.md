@@ -26,7 +26,46 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Orion is an open-source, community-driven framework dedicated to Provable Machine Learning. It provides essential components and a new ONNX runtime for building verifiable Machine Learning models using [STARKs](https://starkware.co/stark/).
+GitHub Issues:
+1D Module Tests:
+FP8x23 Softmax Test:
 
+Description: Test the softmax operation on a 1D tensor with FP8x23 fixed-point implementation.
+Input Data: 1x3 tensor data.
+Expected Output: Softmax output values for each element.
+Context: Verify the correctness of softmax computation with FP8x23 fixed-point precision.
+FP16x16 Softmax Test:
+
+Description: Test the softmax operation on a 1D tensor with FP16x16 fixed-point implementation.
+Input Data: 1x3 tensor data.
+Expected Output: Softmax output values for each element.
+Context: Validate the softmax computation accuracy with FP16x16 fixed-point precision.
+2D Module Tests:
+FP8x23 Softmax Test:
+
+Description: Test the softmax operation on a 2D tensor with FP8x23 fixed-point implementation.
+Input Data: 2x2 tensor data.
+Expected Output: Softmax output values for each element along both axes.
+Context: Ensure correct softmax computation for 2D tensors with FP8x23 fixed-point precision.
+FP16x16 Softmax Test:
+
+Description: Test the softmax operation on a 2D tensor with FP16x16 fixed-point implementation.
+Input Data: 2x2 tensor data.
+Expected Output: Softmax output values for each element along both axes.
+Context: Verify the accuracy of softmax computation for 2D tensors with FP16x16 fixed-point precision.
+3D Module Tests:
+FP8x23 Softmax Test:
+
+Description: Test the softmax operation on a 3D tensor with FP8x23 fixed-point implementation.
+Input Data: 2x2x2 tensor data.
+Expected Output: Softmax output values for each element along each axis.
+Context: Check softmax computation accuracy for 3D tensors with FP8x23 fixed-point precision.
+FP16x16 Softmax Test:
+
+Description: Test the softmax operation on a 3D tensor with FP16x16 fixed-point implementation.
+Input Data: 2x2x2 tensor data.
+Expected Output: Softmax output values for each element along each axis.
+Context: Evaluate softmax computation precision for 3D tensors with FP16x16 fixed-point precision.
 ## 🤔 What is ONNX Runtime?
 
 ONNX (Open Neural Network Exchange), is an open-source standard created to represent deep learning models. The aim of its development was to enable interoperability among diverse deep learning frameworks, like TensorFlow or PyTorch. By offering a universal file format, ONNX allows models trained in one framework to be readily applied in another for inference, eliminating the need for model conversion.
